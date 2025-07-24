@@ -1,5 +1,10 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  base: '/henox-business-website/', // 👈 Add this line inside the config object
+})
 import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
